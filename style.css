@@ -1,0 +1,284 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a192f 0%, #0d2137 50%, #112240 100%);
+    min-height: 100vh;
+    color: #e6f1ff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ===== TABLE LAYOUT IMPROVEMENTS ===== */
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+/* ===== HEADER SECTION ===== */
+td[colspan="3"] img[src*="Hearder"],
+td[colspan="3"] img[src*="Bn1"],
+td[colspan="3"] img[src*="Bn2"],
+td[colspan="3"] img[src*="Bn3"],
+td[colspan="3"] img[src*="Bn4"],
+td[colspan="3"] img[src*="Bn5"] {
+    width: 100vw;
+    max-width: none;
+    height: auto;
+    display: block;
+    border-radius: 0;
+    box-shadow: 0 10px 40px rgba(0, 255, 255, 0.1);
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+/* ===== MARQUEE / WELCOME BAR ===== */
+marquee {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #64ffda;
+    padding: 15px 0;
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+}
+
+td[bgcolor="#032C72"] {
+    background: linear-gradient(90deg, #032c72, #0a4da1, #032c72) !important;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* ===== NAVIGATION BUTTONS ===== */
+a img {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+a img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 25px rgba(100, 255, 218, 0.3);
+    filter: brightness(1.1);
+}
+
+/* ===== LESSON BUTTONS SIDEBAR ===== */
+th[scope="row"] {
+    padding: 8px 0;
+}
+
+th[scope="row"] a img {
+    width: 280px !important;
+    height: auto !important;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+th[scope="row"] a img:hover {
+    transform: translateX(10px) scale(1.08);
+    box-shadow: 0 8px 30px rgba(100, 255, 218, 0.4);
+}
+
+/* ===== HOME BUTTON ===== */
+img[src*="Hoam"],
+img[src*="B_Hoam"] {
+    width: 280px !important;
+    height: auto !important;
+}
+
+/* ===== CONTENT AREA ===== */
+h2 {
+    color: #64ffda;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(100, 255, 218, 0.3);
+    text-shadow: 0 0 15px rgba(100, 255, 218, 0.4);
+}
+
+h3 {
+    color: #8892b0;
+    font-size: 1.3rem;
+    margin: 25px 0 15px 0;
+    padding-left: 15px;
+    border-left: 4px solid #64ffda;
+}
+
+p {
+    color: #ccd6f6;
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #64ffda, transparent);
+    margin: 30px 0;
+}
+
+ol {
+    background: linear-gradient(145deg, #112240, #1a365d);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    list-style-position: inside;
+}
+
+ol li {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background: rgba(10, 25, 47, 0.5);
+    border-radius: 12px;
+    border-left: 4px solid #64ffda;
+    transition: all 0.3s ease;
+}
+
+ol li:hover {
+    background: rgba(100, 255, 218, 0.05);
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+strong {
+    color: #64ffda;
+    font-size: 1.15rem;
+    text-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
+}
+
+/* ===== FOOTER ===== */
+td[colspan="3"] img[src*="Footer"] {
+    width: 100vw;
+    max-width: none;
+    height: auto;
+    display: block;
+    border-radius: 0;
+    box-shadow: 0 -10px 40px rgba(0, 255, 255, 0.1);
+    margin-top: 20px;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+/* ===== SCROLLBAR STYLING ===== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a192f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #64ffda, #0a84ff);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #7affdf, #2e9bff);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ol li {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+ol li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+ol li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+ol li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+ol li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+ol li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+ol li:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+    table {
+        width: 100% !important;
+    }
+
+    td[colspan="3"] img {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    ol {
+        padding: 20px;
+    }
+
+    ol li {
+        padding: 12px 15px;
+    }
+
+    marquee {
+        font-size: 0.95rem;
+    }
+}
+
+/* ===== GLOW EFFECTS ===== */
+.glow {
+    box-shadow:
+        0 0 10px rgba(100, 255, 218, 0.3),
+        0 0 20px rgba(100, 255, 218, 0.2),
+        0 0 30px rgba(100, 255, 218, 0.1);
+}
+
+/* ===== SELECTION STYLING ===== */
+::selection {
+    background: #64ffda;
+    color: #0a192f;
+}
